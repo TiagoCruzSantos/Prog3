@@ -18,9 +18,21 @@ class Aluno{
         string telefone;
         string email;
         string nome;
+        Turma *tur;
     public:
+        void setMatriculaInstituicao(string mat);
+        void setCodigo(int cod);
+        void setCpf(string cpf);
+        void setRg(string rg);
+        void setEndereco(string end);
+        void setTelefone(string tel);
+        void setEmail(string email);
+        void setNome(string nome);
+        
         static int qtdAlunos;
+        
         void matricular(Turma *t);
+        
         Aluno(string nome, int codigo, string rg, string cpf, string endereco, string telefone, string email);
         ~Aluno();
         string getCPF();
@@ -30,7 +42,6 @@ class Aluno{
         string getTelefone();
         string getEmail();
         string getNome();
-
 };
 
 #endif

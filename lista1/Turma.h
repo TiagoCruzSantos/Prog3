@@ -13,8 +13,8 @@ class Turma{
         int vagas;
         int ano;
         int semestre;
-        tm dtInicio;
-        tm dtFim;
+        time_t dtInicio;
+        time_t dtFim;
         Professor *prof;
     public:
         static int qtdTurmas;

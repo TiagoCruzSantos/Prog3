@@ -44,3 +44,35 @@ string Aluno::getEmail(){
 string Aluno::getNome(){
     return this->nome;
 }
+
+void Aluno::setCPF(string cpf){
+    this->CPF = cpf;
+}
+
+void Aluno::setCodigo(int cod){
+    this->codigo = cod;
+}
+
+void Aluno::setRG(string rg){
+    this->RG = rg;
+}
+
+void Aluno::setEndereco(string end){
+    this->endereco = end;
+}
+
+void Aluno::setTelefone(string tel){
+    this->telefone;
+}
+
+void Aluno::setEmail(string email){
+    this->email;
+}
+
+void Aluno::setNome(string nome){
+    this->nome = nome;
+}
+
+void matricular(Turma *t){
+    this->tur = t;
+}

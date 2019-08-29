@@ -11,6 +11,11 @@ class Curso{
     private:
         int codigo;
         string nome;
+    public:
+        Curso();
+        ~Curso();
+        int getCodigo();
+        string getNome();
 };
 
 #endif
