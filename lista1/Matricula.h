@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include "Turma.h"
 
 using namespace std;
 
@@ -13,10 +14,12 @@ class Matricula{
         tm diaMatricula;
         int nota;
         string situacao;
+        Turma *tur;
     public:
-        Matricula();
+        Matricula(Turma *tur);
         ~Matricula();
-}
+        
+};
 
 
 #endif

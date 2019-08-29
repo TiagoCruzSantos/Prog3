@@ -21,8 +21,16 @@ class Aluno{
     public:
         static int qtdAlunos;
         void matricular(Turma *t);
-        Aluno();
+        Aluno(string nome, int codigo, string rg, string cpf, string endereco, string telefone, string email);
         ~Aluno();
-}
+        string getCPF();
+        int getCodigo();
+        string getRG();
+        string getEndereco();
+        string getTelefone();
+        string getEmail();
+        string getNome();
+
+};
 
 #endif

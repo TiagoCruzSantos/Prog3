@@ -17,6 +17,7 @@ void Professor::setProfessor(tm adm, string cpf, string rg, string end, string t
     this->telefone = tel;
     this->email = email;
     this->nome = nome;
+    Professor::qtdProfessores++;
 }
 
 string Professor::getProfessor(){

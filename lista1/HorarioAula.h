@@ -16,6 +16,6 @@ class HorarioAula{
     public:
         HorarioAula();
         ~HorarioAula();
-}
+};
 
 #endif

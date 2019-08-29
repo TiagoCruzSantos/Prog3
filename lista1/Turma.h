@@ -15,11 +15,13 @@ class Turma{
         int semestre;
         tm dtInicio;
         tm dtFim;
+        Professor *prof;
     public:
         static int qtdTurmas;
         Turma();
         ~Turma();
-}
+        void alocarProfessor(Professor *p);
+};
 
 
 #endif
