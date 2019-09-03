@@ -14,6 +14,10 @@ float ItemDePedido::getPrecoVenda(){
     return this->precoVenda;
 }
 
-void ItemDePedido::setQuantidade(int qtd);
-void ItemDePedido::setPrecoVenda(float preco);
+void ItemDePedido::setQuantidade(int qtd){
+    this->quantidade = qtd;
+}
+void ItemDePedido::setPrecoVenda(float preco){
+    this->precoVenda = preco;
+}
 
