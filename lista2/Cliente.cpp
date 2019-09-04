@@ -1,10 +1,19 @@
 #include "Cliente.h"
 
-Cliente::Cliente(){
-    
+Cliente::Cliente(string nome, tm data, string rg, string cpf, string end, string tel, string email, Pedido * ped){
+    cout << "Cliente criado" << endl;
+    this->setNome(nome);
+    this->setDataNascimento(data);
+    this->setRG(rg);
+    this->setCPF(cpf);
+    this->setEndereco(end);
+    this->setTelefone(tel);
+    this->setEmail(email);
+    this->pedidos = new vector<Pedido*>;
+    this->pedidos->push_back(ped);
 }
 Cliente::~Cliente(){
-    
+   cout << "Cliente deletado" << endl; 
 }
         
 string Cliente::getNome(){

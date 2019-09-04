@@ -1,10 +1,12 @@
 #include "Produto.h"
 
 Produto::Produto(){
-    
+    cout << "Novo Produto" << endl;
+    Produto::qtdProdutos++;
 }
 Produto::~Produto(){
-    
+    cout << "Produto entregue" << endl;
+    Produto::qtdProdutos--;
 }
 
 int Produto::getCodigo(){

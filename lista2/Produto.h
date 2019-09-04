@@ -33,6 +33,6 @@ class Produto{
         void setPrecoBase(float preco);
 
 
-}
+};
 
 #endif

@@ -5,6 +5,8 @@
 #include <vector>
 #include <ctime>
 
+#include "Pedido.h"
+
 using namespace std;
 
 class Cliente {
@@ -16,8 +18,9 @@ class Cliente {
         string endereco;
         string telefone;
         string email;
+        vector<Pedido*> * pedidos;
     public:
-        Cliente();
+        Cliente(string nome, tm data, string rg, string cpf, string end, string tel, string email, Pedido * ped);
         ~Cliente();
         
         string getNome();

@@ -5,6 +5,9 @@
 #include <vector>
 #include <ctime>
 
+#include "Funcionario.h"
+#include "ItemDePedido.h"
+
 using namespace std;
 
 class Pedido {
@@ -13,6 +16,8 @@ class Pedido {
         tm data;
         string status;
         string formaPgto;
+        vector<ItemDePedido*> * itens;
+        Funcionario * funcionario;
     public:
         static int qtdPedidos;
 
@@ -21,8 +26,8 @@ class Pedido {
 
         float getValorTotal();
         tm getData();
-        string status();
-        string formaPgto();
+        string getStatus();
+        string getFormaPgto();
 
         void setValorTotal(float valor);
         void setData(tm data);

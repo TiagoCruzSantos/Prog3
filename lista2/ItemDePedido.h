@@ -5,12 +5,15 @@
 #include <vector>
 #include <ctime>
 
+#include "Produto.h"
+
 using namespace std;
 
 class ItemDePedido{
     private:
-        int quantitdade;
+        int quantidade;
         float precoVenda;
+        Produto * produto;
     public:
        ItemDePedido();
        ~ItemDePedido();
@@ -20,6 +23,6 @@ class ItemDePedido{
 
        void setQuantidade(int qtd);
        void setPrecoVenda(float preco);
-}
+};
 
 #endif

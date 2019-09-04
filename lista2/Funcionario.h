@@ -28,7 +28,7 @@ class Funcionario {
         string getEndereco();
         string getTelefone();
         string getEmail();
-        string getMatriculo();
+        string getMatricula();
 
         void setNome(string nome);
         void setDataNascimento(tm data);

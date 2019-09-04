@@ -1,11 +1,13 @@
 #include "Pedido.h"
 
 Pedido::Pedido(){
-
+    cout << "Pedido novo" << endl;
+    Pedido::qtdPedidos++;
 }
 
 Pedido::~Pedido(){
-    
+    cout << "Pedido entregue" << endl;
+    Pedido::qtdPedidos--;
 }
 
 float Pedido::getValorTotal(){
@@ -14,10 +16,10 @@ float Pedido::getValorTotal(){
 tm Pedido::getData(){
     return this->data;
 }
-string Pedido::status(){
+string Pedido::getStatus(){
     return this->status;
 }
-string Pedido::formaPgto(){
+string Pedido::getFormaPgto(){
     return this->formaPgto;
 }
 
