@@ -21,7 +21,7 @@ class Pedido {
     public:
         static int qtdPedidos;
 
-        Pedido();
+        Pedido(Funcionario *fun, ItemDePedido *ped);
         ~Pedido();
 
         float getValorTotal();
@@ -33,6 +33,10 @@ class Pedido {
         void setData(tm data);
         void setStatus(string status);
         void setFormaPgto(string pgto);
+
+        void adicionarItens(ItemDePedido * ped);
+        vector<ItemDePedido*> * getItensDePedido();
+        Funcionario * getFuncionario();
 };
 
 

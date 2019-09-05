@@ -15,14 +15,16 @@ class ItemDePedido{
         float precoVenda;
         Produto * produto;
     public:
-       ItemDePedido();
-       ~ItemDePedido();
+        ItemDePedido(Produto *prod);
+        ~ItemDePedido();
 
-       int getQuantidade();
-       float getPrecoVenda();
+        int getQuantidade();
+        float getPrecoVenda();
 
-       void setQuantidade(int qtd);
-       void setPrecoVenda(float preco);
+        void setQuantidade(int qtd);
+        void setPrecoVenda(float preco);
+
+        Produto * getProduto();
 };
 
 #endif

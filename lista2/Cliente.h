@@ -20,9 +20,9 @@ class Cliente {
         string email;
         vector<Pedido*> * pedidos;
     public:
-        Cliente(string nome, tm data, string rg, string cpf, string end, string tel, string email, Pedido * ped);
+        Cliente();
         ~Cliente();
-        
+
         string getNome();
         tm getDataNascimento();
         string getRG();
@@ -39,6 +39,8 @@ class Cliente {
         void setTelefone(string tel);
         void setEmail(string email);
 
+        void adicionarPedido(Pedido *ped);
+        vector<Pedido*> * getPedidos();
 };
 
 

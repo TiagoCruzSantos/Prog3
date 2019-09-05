@@ -1,10 +1,10 @@
 #include "ItemDePedido.h"
 
-ItemDePedido::ItemDePedido(){
-        
+ItemDePedido::ItemDePedido(Produto *prod){
+    this->produto = prod;        
 }
 ItemDePedido::~ItemDePedido(){
-
+    delete this->produto;
 }
 
 int ItemDePedido::getQuantidade(){
@@ -21,3 +21,6 @@ void ItemDePedido::setPrecoVenda(float preco){
     this->precoVenda = preco;
 }
 
+Produto * ItemDePedido::getProduto(){
+    return this->produto;
+}
