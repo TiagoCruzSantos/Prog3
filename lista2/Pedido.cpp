@@ -11,7 +11,6 @@ Pedido::Pedido(Funcionario * fun, ItemDePedido *ped){
 Pedido::~Pedido(){
     cout << "Pedido entregue" << endl;
     Pedido::qtdPedidos--;
-    delete this->funcionario;
     int tam = this->itens->size();
     for(int i = 0; i < tam; i++){
         delete this->itens->at(i);
