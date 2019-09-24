@@ -4,7 +4,7 @@
 #include "Quadrado.h"
 #include "Triangulo.h"
 #include "Esfera.h"
-//#include "Cubo.h"
+#include "Cubo.h"
 //#include "Cilindro.h"
 
 using namespace std;
@@ -25,9 +25,14 @@ int main(){
     Esfera *esf = new Esfera(3);
     esf->imprimirDados();
     cout << endl;
-    
+
+    Cubo *cub = new Cubo(5);
+    cub->imprimirDados();
+    cout << endl;
+
     delete circ;
     delete quad;
     delete tri;
     delete esf;
+    delete cub;
 }
