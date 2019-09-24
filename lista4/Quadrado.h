@@ -2,6 +2,8 @@
 #define _QUADRADO_
 #include "Forma2d.h"
 
+using namespace std;
+
 class Quadrado: public Forma2d{
     private:
         double lado;
