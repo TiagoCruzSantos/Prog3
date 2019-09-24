@@ -4,7 +4,7 @@ Funcionario::Funcionario(){
     
 }
 Funcionario::~Funcionario(){
-    
+    cout << "Funcionario demitido" << endl;    
 }
         
 string Funcionario::getNome(){
