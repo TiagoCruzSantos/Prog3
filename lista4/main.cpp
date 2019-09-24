@@ -1,5 +1,8 @@
 #include <iostream>
-#include <list>
+#include <vector>
+#include "Forma.h"
+#include "Forma2d.h"
+#include "Forma3d.h"
 #include "Circulo.h"
 #include "Quadrado.h"
 #include "Triangulo.h"
