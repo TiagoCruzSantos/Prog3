@@ -2,7 +2,6 @@
 #define _FORMA_
 
 #include <iostream>
-#include <list>
 
 using namespace std;
 
