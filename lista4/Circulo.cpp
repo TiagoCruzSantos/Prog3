@@ -18,5 +18,5 @@ double Circulo::calcularArea(){
 
 
 void Circulo::imprimirDados(){
-    cout << "RAIO DO CIRCULO: " << this->raio << endl << "AREA DO CIRCULO: " << this->calcularArea() << endl;
+    cout << "--CIRCULO--" << endl << "RAIO DO CIRCULO: " << this->raio << endl << "AREA DO CIRCULO: " << this->calcularArea() << endl;
 }

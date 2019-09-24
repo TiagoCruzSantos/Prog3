@@ -26,7 +26,7 @@ double Cilindro::calcularArea(){
 }
 
 void Cilindro::imprimirDados(){
-    cout << "RAIO DO CILINDRO: " << this->raio << endl << "ALTURA DO CILINDRO: " << this->altura << endl << "AREA DA SUPERFICIE DO CILINDRO: " << this->calcularArea() << endl << "VOLUME DO CILINDRO: " << this->calcularVolume() << endl;
+    cout << "--CILINDRO--" << endl << "RAIO DO CILINDRO: " << this->raio << endl << "ALTURA DO CILINDRO: " << this->altura << endl << "AREA DA SUPERFICIE DO CILINDRO: " << this->calcularArea() << endl << "VOLUME DO CILINDRO: " << this->calcularVolume() << endl;
 }
 
 double Cilindro::calcularVolume(){

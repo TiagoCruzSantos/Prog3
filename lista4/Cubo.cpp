@@ -21,5 +21,5 @@ double Cubo::calcularVolume(){
 }
 
 void Cubo::imprimirDados(){
-    cout << "LADO DO CUBO: " << this->lado << endl << "AREA DA SUPERFICIE DO CUBO: " << this->calcularArea() << endl << "VOLUME DO CUBO: " << this->calcularVolume() << endl;
+    cout << "--CUBO--" << endl << "LADO DO CUBO: " << this->lado << endl << "AREA DA SUPERFICIE DO CUBO: " << this->calcularArea() << endl << "VOLUME DO CUBO: " << this->calcularVolume() << endl;
 }

@@ -26,5 +26,5 @@ double Triangulo::calcularArea(){
 }
 
 void Triangulo::imprimirDados(){
-    cout << "BASE DO TRIANGULO: " << this->base << endl << "ALTURA DO TRIANGULO: " << this->altura << endl << "AREA DO TRIANGULO: " << this->calcularArea() << endl;
+    cout << "--TRIANGULO--" << endl << "BASE DO TRIANGULO: " << this->base << endl << "ALTURA DO TRIANGULO: " << this->altura << endl << "AREA DO TRIANGULO: " << this->calcularArea() << endl;
 }

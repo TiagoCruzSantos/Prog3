@@ -21,6 +21,6 @@ double Esfera::calcularVolume(){
 }
 
 void Esfera::imprimirDados(){
-    cout << "RAIO DA ESFERA: " << this->raio << endl << "AREA DA SUPERFICIE DA ESFERA: " << this->calcularArea() << endl << "VOLUME DA ESFERA: " << this->calcularVolume() << endl;
+    cout << "--ESFERA--" << endl << "RAIO DA ESFERA: " << this->raio << endl << "AREA DA SUPERFICIE DA ESFERA: " << this->calcularArea() << endl << "VOLUME DA ESFERA: " << this->calcularVolume() << endl;
 }
 

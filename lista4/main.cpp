@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 #include "Forma.h"
 #include "Forma2d.h"
 #include "Forma3d.h"
@@ -12,32 +14,50 @@
 
 using namespace std;
 
-int main(){
-    Circulo *circ = new Circulo(3);
-    Quadrado *quad = new Quadrado(5);
-    Triangulo *tri = new Triangulo(5, 5);
-    Esfera *esf = new Esfera(3);
-    Cubo *cub = new Cubo(5);
-    Cilindro *cin = new Cilindro(5, 10);
-    vector<Forma*> * listadeformas = new vector<Forma*>();
+Forma * criarForma(){
+    int k = rand()%6;
+    int n1 = rand()%100;
+    int n2 = rand()%100;
+    switch(k){
+        case 0:
+            return new Circulo(n1);
+            break;
+        case 1:
+            return new Quadrado(n1);
+            break;
+        case 2:
+            return new Triangulo(n1, n2);
+            break;
+        case 3:
+            return new Esfera(n1);
+            break;
+        case 4:
+            return new Cubo(n1);
+            break;
+        case 5:
+            return new Cilindro(n1, n2);
+            break;
+        default:
+            break;
+    }
+}
 
-    listadeformas->push_back(circ);
-    listadeformas->push_back(quad);
-    listadeformas->push_back(tri);
-    listadeformas->push_back(esf);
-    listadeformas->push_back(cub);
-    listadeformas->push_back(cin);
+int main(){
+    srand(time(0));
+    vector<Forma*> * listadeformas = new vector<Forma*>();
     
+    for(int i = 0; i < 100; i++){
+        listadeformas->push_back(criarForma());
+    }
+
     for(int i = 0; i < listadeformas->size(); i++){
         listadeformas->at(i)->imprimirDados();
         cout << endl;
     }
 
-    delete circ;
-    delete quad;
-    delete tri;
-    delete esf;
-    delete cub;
-    delete cin;
+    for(int i = 0; i < listadeformas->size(); i++){
+        delete listadeformas->at(i);
+    }
+    
     delete listadeformas;
 }

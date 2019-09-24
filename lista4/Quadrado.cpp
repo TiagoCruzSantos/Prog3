@@ -17,5 +17,5 @@ double Quadrado::calcularArea(){
 }
 
 void Quadrado::imprimirDados(){
-    cout << "TAMANHO DO LADO: " << this->lado << endl << "AREA DO QUADRADO: " << this->calcularArea() << endl;
+    cout << "--QUADRADO--" << endl << "TAMANHO DO LADO: " << this->lado << endl << "AREA DO QUADRADO: " << this->calcularArea() << endl;
 }
