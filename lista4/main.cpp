@@ -16,8 +16,8 @@ using namespace std;
 
 Forma * criarForma(){
     int k = rand()%6;
-    int n1 = rand()%100;
-    int n2 = rand()%100;
+    double n1 = (rand()%1000)/10.0;
+    double n2 = (rand()%1000)/10.0;
     switch(k){
         case 0:
             return new Circulo(n1);
