@@ -5,7 +5,7 @@
 #include "Triangulo.h"
 #include "Esfera.h"
 #include "Cubo.h"
-//#include "Cilindro.h"
+#include "Cilindro.h"
 
 using namespace std;
 
@@ -30,9 +30,14 @@ int main(){
     cub->imprimirDados();
     cout << endl;
 
+    Cilindro *cin = new Cilindro(5, 10);
+    cin->imprimirDados();
+    cout << endl;
+
     delete circ;
     delete quad;
     delete tri;
     delete esf;
     delete cub;
+    delete cin;
 }
