@@ -51,7 +51,7 @@ public class Usuario {
 		return novo;
 	}
 	
-	void Entrar_Grupo(Grupo grp) {
+	public void Entrar_Grupo(Grupo grp) {
 		grp.Novo_Participante(this);
 		this.grupos.add(grp);
 	}
