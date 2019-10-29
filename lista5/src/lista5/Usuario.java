@@ -55,4 +55,10 @@ public class Usuario {
 		grp.Novo_Participante(this);
 		this.grupos.add(grp);
 	}
+	
+	public void Printar_seguidos() {
+		this.seguidores.forEach(users -> {
+			System.out.print("Nome: " + users.getNome() + "\n");
+		});;
+	}
 }
